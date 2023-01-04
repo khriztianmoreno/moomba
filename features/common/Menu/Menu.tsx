@@ -13,12 +13,9 @@ import {
 } from './Menu.styles'
 import { PageContainer } from '../Theme/styles'
 
-
 const Menu = () => {
   return (
-    <PageContainer
-      // bgColor={colors.electricViolet}
-    >
+    <PageContainer>
       <NavMenu>
         <NavMenuLogo>
           <Link href="/">
