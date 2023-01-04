@@ -7,11 +7,11 @@ export const PageContainer = styled.div(
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     position: relative;
-    background-color: ${props.bgColor || props.theme.colors.white};
+    background-color: ${props.bgColor || 'transparent'};
 
-    ${media.md`
+    @media (min-width: 768px) {
       padding-left: 22rem;
       padding-right: 22rem;
-    `}
+    }
   `,
 );

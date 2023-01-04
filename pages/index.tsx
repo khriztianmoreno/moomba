@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-
+import Hero from '../features/landing/Hero'
 import Menu from '../features/common/Menu'
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Menu />
+        <Hero />
 
       </main>
     </>

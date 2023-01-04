@@ -17,7 +17,9 @@ import { colors } from '../Theme/theme'
 
 const Menu = () => {
   return (
-    <PageContainer bgColor={colors.electricViolet}>
+    <PageContainer
+      // bgColor={colors.electricViolet}
+    >
       <NavMenu>
         <NavMenuLogo>
           <Link href="/">

@@ -6,6 +6,11 @@ export const NavMenu = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
+
+  ${media.md`
+    padding: 4rem 0;
+  `}
 `;
 
 export const NavMenuLogo = styled.div``;
@@ -24,7 +29,7 @@ export const NavMenuList = styled.ul`
 `;
 
 export const NavMenuListItem = styled.li(props => (`
-  margin: 0 75px;
+  margin: 0 5rem;
 
   a {
     color: ${props.theme.colors.white};
@@ -62,13 +67,17 @@ export const HambugerMenu = styled.div`
   `}
 `;
 
-export const HideButtonMobile = styled.div(props => (`
+export const HideButtonMobile = styled.div(`
   display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 
   ${media.md`
     display: block;
   `}
-`));
+`);
 
 export const HideButtonDesktop = styled.div`
   display: block;
