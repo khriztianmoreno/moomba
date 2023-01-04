@@ -12,7 +12,6 @@ import {
   LogoContainer,
 } from './Menu.styles'
 import { PageContainer } from '../Theme/styles'
-import { colors } from '../Theme/theme'
 
 
 const Menu = () => {

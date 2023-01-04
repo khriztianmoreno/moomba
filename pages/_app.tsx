@@ -7,7 +7,7 @@ import 'normalize.css/normalize.css';
 import theme from '../features/common/Theme/theme'
 import '../styles/globals.css'
 
-const poppins = Poppins({ weight: ['400', '500', '600', '700'], })
+const poppins = Poppins({ weight: ['400', '500', '600', '700'], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -1,7 +1,5 @@
 import styled from '@emotion/styled'
 
-import media from '../Theme/media'
-
 export const PageContainer = styled.div(
   props => `
     padding-left: 1.5rem;
