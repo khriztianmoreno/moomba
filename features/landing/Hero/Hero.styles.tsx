@@ -11,7 +11,11 @@ export const MenuContainer = styled.div`
   }
 `;
 
-export const BgHero = styled.div(
+type BgHeroProps = {
+  bgImage: string;
+}
+
+export const BgHero = styled.div<BgHeroProps>(
   props => `
     margin-bottom: 15rem;
     position: relative;

@@ -1,6 +1,10 @@
 import styled from '@emotion/styled'
 
-export const PageContainer = styled.div(
+type PageContainerProps = {
+  bgColor?: string
+}
+
+export const PageContainer = styled.div<PageContainerProps>(
   props => `
     padding-left: 1.5rem;
     padding-right: 1.5rem;
