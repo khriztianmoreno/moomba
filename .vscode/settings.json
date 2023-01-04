@@ -1,0 +1,8 @@
+{
+  "conventionalCommits.scopes": [
+    "landing"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}
