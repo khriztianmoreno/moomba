@@ -1,13 +1,17 @@
-const colors = {
-  electricViolet: '#6A1FF5',
-  manatee: '#8B869A',
-  persianIndigo: '#35107B',
-  springGreen: '#1BF37E',
-  white: '#FFFFFF',
-}
+import styled from '@emotion/styled'
 
-const theme: App.Theme = {
-  colors,
-}
+import media from '../Theme/media'
 
-export default theme
+export const PageContainer = styled.div(
+  props => `
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    background-color: ${props.bgColor || props.theme.colors.white};
+
+    ${media.md`
+      padding-left: 22rem;
+      padding-right: 22rem;
+    `}
+  `,
+);

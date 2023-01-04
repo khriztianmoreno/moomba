@@ -2,7 +2,9 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider } from '@emotion/react'
 import { Poppins } from '@next/font/google'
 
-import theme from '../features/common/Theme/Styles'
+import 'normalize.css/normalize.css';
+
+import theme from '../features/common/Theme/theme'
 import '../styles/globals.css'
 
 const poppins = Poppins({ weight: ['400', '500', '600', '700'], })

@@ -6,7 +6,8 @@ declare module App {
       persianIndigo: string;
       springGreen: string;
       white: string;
-    }
+    },
+    breakpoints: Breakpoints
   };
 }
 
