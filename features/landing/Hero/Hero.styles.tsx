@@ -21,7 +21,7 @@ export const BgHero = styled.div<BgHeroProps>(
     position: relative;
 
     @media (min-width: 768px) {
-      height: 100vh;
+      height: 1220px;
     }
 
     &::before {

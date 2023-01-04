@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Hero from '../features/landing/Hero'
-import Menu from '../features/common/Menu'
+import Brands from '../features/landing/Brands'
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
       </Head>
       <main>
         <Hero />
-
+        <Brands />
       </main>
     </>
   )
