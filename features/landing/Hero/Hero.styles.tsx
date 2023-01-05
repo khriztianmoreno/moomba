@@ -21,7 +21,7 @@ export const BgHero = styled.div<BgHeroProps>(
     position: relative;
 
     @media (min-width: 768px) {
-      height: 1220px;
+      height: 100vh;
     }
 
     &::before {
@@ -82,7 +82,6 @@ export const Content = styled.div`
   ${media.md`
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
   `}
 `;
 
@@ -103,19 +102,31 @@ export const Info = styled.div(
     }
 
     h1 {
-      font: normal normal bold 6.4rem/9rem Poppins;
+      font: normal normal bold 6.4rem Poppins;
       letter-spacing: -1.6px;
+      line-height: 6.5rem;
+      padding-bottom: 1rem;
+
+      @media (min-width: 768px) {
+        line-height: 9rem;
+      }
     }
 
     p {
       font-size: 1.8rem;
       line-height: 3.6rem;
       letter-spacing: 0.4rem;
+      padding-right: 2rem;
     }
   `
 );
 
 export const ImageContainer = styled.div`
-  width: 88rem;
-  margin-top: -5rem;
+  // margin-top: -5rem;
+
+  @media (min-width: 768px) {
+    img {
+      width: 1090px;
+    }
+  }
 `;

@@ -1,16 +1,14 @@
 import styled from '@emotion/styled';
 
-import media from '../Theme/media';
-
 export const NavMenu = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 
-  ${media.md`
+  @media (min-width: 768px) {
     padding: 4rem 0;
-  `}
+  }
 `;
 
 export const NavMenuLogo = styled.div``;
@@ -18,18 +16,17 @@ export const NavMenuLogo = styled.div``;
 export const NavMenuList = styled.ul`
   display: none;
 
-
-  ${media.md`
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
-  `}
+  }
 `;
 
 export const NavMenuListItem = styled.li(props => (`
-  margin: 0 5rem;
+  margin: 0 2rem;
 
   a {
     color: ${props.theme.colors.white};
@@ -38,23 +35,29 @@ export const NavMenuListItem = styled.li(props => (`
     text-transform: capitalize;
     text-decoration: none;
 
-    &:hover {
+    &:hover, &.active {
       color: ${props.theme.colors.springGreen};
+    }
+
+    &.active {
+      border-bottom: 0.2rem solid ${props.theme.colors.springGreen};
     }
   }
 `));
 
 export const ButtonSignUp = styled.button(props => (`
-  background: ${props.theme.colors.electricViolet};
+  background-color: ${props.theme.colors.electricViolet};
   border-radius: 5px;
   color: ${props.theme.colors.white};
-  height: 3rem;
-  width: 9rem;
+  font-size: 1.6rem;
+  font-family: Poppins;
+  line-height: 3.4rem;
+  padding: 0.4rem 4.3rem;
 
-  ${media.md`
-    height: 6rem;
-    width: 19rem;
-  `}
+  &:hover {
+    background-color: ${props.theme.colors.springGreen};
+    color: ${props.theme.colors.electricViolet};
+  }
 `));
 
 export const HambugerMenu = styled.div`
@@ -62,9 +65,9 @@ export const HambugerMenu = styled.div`
     fill: ${props => props.theme.colors.springGreen};
   }
 
-  ${media.md`
+  @media (min-width: 768px) {
     display: none;
-  `}
+  }
 `;
 
 export const HideButtonMobile = styled.div(`
@@ -73,25 +76,21 @@ export const HideButtonMobile = styled.div(`
   @media (min-width: 768px) {
     display: block;
   }
-
-  ${media.md`
-    display: block;
-  `}
 `);
 
 export const HideButtonDesktop = styled.div`
   display: block;
 
-  ${media.md`
+  @media (min-width: 768px) {
     display: none;
-  `}
+  }
 `;
 
 export const LogoContainer = styled.div`
   width: 16rem;
   object-fit: contain;
 
-  ${media.md`
+  @media (min-width: 768px) {
     width: 20rem;
-  `}
+  }
 `;

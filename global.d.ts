@@ -1,6 +1,7 @@
 declare module App {
   type Theme = {
     colors: {
+      aluminium: string;
       electricViolet: string;
       manatee: string;
       persianIndigo: string;

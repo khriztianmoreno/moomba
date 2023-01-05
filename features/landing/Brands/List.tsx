@@ -9,15 +9,17 @@ import VisaLogo from './VisaCard'
 
 const BrandsList = () => {
   return (
-    <PageContainer>
-      <BrandContainer>
-        <MicrosoftLogo />
-        <PaypalLogo />
-        <NetflixLogo />
-        <TinderLogo />
-        <VisaLogo />
-      </BrandContainer>
-    </PageContainer>
+    <section className="layout">
+      <PageContainer>
+        <BrandContainer>
+          <MicrosoftLogo />
+          <PaypalLogo />
+          <NetflixLogo />
+          <TinderLogo />
+          <VisaLogo />
+        </BrandContainer>
+      </PageContainer>
+    </section>
   )
 }
 

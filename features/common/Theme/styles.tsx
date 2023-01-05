@@ -6,14 +6,16 @@ type PageContainerProps = {
 
 export const PageContainer = styled.div<PageContainerProps>(
   props => `
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    position: relative;
     background-color: ${props.bgColor || 'transparent'};
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    width: 100%;
 
-    @media (min-width: 768px) {
-      padding-left: 22rem;
-      padding-right: 22rem;
+    @media (min-width: 1280px) {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      max-width: 1280px;
     }
   `,
 );

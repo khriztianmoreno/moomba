@@ -11,5 +11,9 @@ export const BrandContainer = styled.div`
 
   ${media.md`
     flex-direction: row;
+
+    svg {
+      width: 60%;
+    }
   `}
 `;

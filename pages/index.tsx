@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import Hero from '../features/landing/Hero'
 import Brands from '../features/landing/Brands'
+import SectionOne from '../features/landing/SectionOne'
 
 function Home() {
   return (
@@ -16,6 +16,7 @@ function Home() {
       <main>
         <Hero />
         <Brands />
+        <SectionOne />
       </main>
     </>
   )

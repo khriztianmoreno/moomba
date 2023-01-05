@@ -16,8 +16,8 @@ import { PageContainer } from "../../common/Theme/styles";
 
 const Hero = () => {
   return (
-    <ContainerHero>
-      <BgHero bgImage={heroBg.src}>
+    <BgHero bgImage={heroBg.src}>
+      <div className="layout">
         <MenuContainer>
           <Menu />
         </MenuContainer>
@@ -37,8 +37,8 @@ const Hero = () => {
             </ImageContainer>
           </Content>
         </PageContainer>
-       </BgHero>
-    </ContainerHero>
+      </div>
+    </BgHero>
   );
 };
 
