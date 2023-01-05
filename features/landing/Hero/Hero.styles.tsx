@@ -64,7 +64,7 @@ export const HideButtonDesktop = styled.div`
 
 export const ButtonSignUp = styled.button(props => (`
   background: ${props.theme.colors.electricViolet};
-  border-radius: 5px;
+  border-radius: 0.9rem;
   color: ${props.theme.colors.white};
   height: 3rem;
   width: 9rem;

@@ -47,7 +47,7 @@ export const NavMenuListItem = styled.li(props => (`
 
 export const ButtonSignUp = styled.button(props => (`
   background-color: ${props.theme.colors.electricViolet};
-  border-radius: 5px;
+  border-radius: 0.9rem;
   color: ${props.theme.colors.white};
   font-size: 1.6rem;
   font-family: Poppins;

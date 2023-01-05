@@ -6,6 +6,7 @@ import SectionOne from '../features/landing/SectionOne'
 import SectionTwo from '../features/landing/SectionTwo'
 import SectionThree from '../features/landing/SectionThree'
 import SectionFour from '../features/landing/SectionFour'
+import AboutSection from '../features/landing/AboutSection'
 
 function Home() {
   const seo = {
@@ -51,6 +52,7 @@ function Home() {
         <SectionThree />
         <SectionOne />
         <SectionFour />
+        <AboutSection />
       </main>
     </>
   )
