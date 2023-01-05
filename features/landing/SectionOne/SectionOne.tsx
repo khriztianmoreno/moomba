@@ -1,5 +1,8 @@
+import { GridContent } from './SectionOne.styles';
 import GeneralInfo from '../../common/GeneralInfo'
 import SplitLayout from '../../common/SplitLayout'
+import InfoItem from '../../common/InfoItem';
+import { ItemBlue, ItemOrange, ItemRed, ItemViolet } from '../../common/Icons/Items'
 
 const SectionOne = () => {
   return(
@@ -11,7 +14,32 @@ const SectionOne = () => {
         />
       </SplitLayout.Left>
       <SplitLayout.Right>
-        <img src="https://picsum.photos/400/400" alt="section-one" />
+        <GridContent>
+          <InfoItem
+            title="Consecte elit ut"
+            description="Lorem ipsum dolor sit consecte elit Ut wisi enim"
+            icon={<ItemRed />}
+            lineColor="#FC7586"
+          />
+          <InfoItem
+            title="Consecte elit ut"
+            description="Lorem ipsum dolor sit consecte elit Ut wisi enim"
+            icon={<ItemBlue />}
+            lineColor="#6ECAC9"
+          />
+          <InfoItem
+            title="Consecte elit ut"
+            description="Lorem ipsum dolor sit consecte elit Ut wisi enim"
+            icon={<ItemViolet />}
+            lineColor="#B888F8"
+          />
+          <InfoItem
+            title="Consecte elit ut"
+            description="Lorem ipsum dolor sit consecte elit Ut wisi enim"
+            icon={<ItemOrange />}
+            lineColor="#FF9655"
+          />
+        </GridContent>
       </SplitLayout.Right>
     </SplitLayout>
   )

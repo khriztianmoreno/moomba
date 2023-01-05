@@ -7,7 +7,7 @@ export const BrandContainer = styled.div`
   flex-direction: column;
   gap: 4rem;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 16rem;
 
   ${media.md`
     flex-direction: row;

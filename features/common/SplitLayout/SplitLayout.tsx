@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import {
   Container,
   Left,
@@ -13,11 +15,11 @@ export const SplitLayoutRight = ({ children }) => (
   <div className="split-layout__right">{children}</div>
 )
 
-const SplitLayout = ({ children }) => {
+const SplitLayout = ({ children, alignItems = 'baseline' }) => {
   return (
     <Container className="layout">
       <PageContainer>
-        <SplitLayoutContainer>
+        <SplitLayoutContainer alignItems={alignItems}>
           {children}
         </SplitLayoutContainer>
       </PageContainer>
