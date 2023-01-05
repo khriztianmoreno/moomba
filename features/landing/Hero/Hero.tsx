@@ -9,7 +9,7 @@ import {
   MenuContainer,
 } from "./Hero.styles";
 
-import heroBg from '../../../assets/img/hero_bg2x.png';
+import heroBg from '../../../assets/img/hero.png';
 import heroContent from '../../../assets/img/hero-content2x.png';
 import Menu from "../../common/Menu";
 import { PageContainer } from "../../common/Theme/styles";
