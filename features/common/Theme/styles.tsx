@@ -13,9 +13,9 @@ export const PageContainer = styled.div<PageContainerProps>(
     width: 100%;
 
     @media (min-width: 1280px) {
-      padding-left: 5rem;
-      padding-right: 5rem;
-      max-width: 1280px;
+      // padding-left: 5rem;
+      // padding-right: 5rem;
+      max-width: 1416px;
     }
   `,
 );
