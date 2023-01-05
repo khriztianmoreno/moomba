@@ -3,18 +3,23 @@ import {
   Container,
   Left,
   LeftSpot,
+  Right,
   RightSpot,
   SplitLayoutContainer,
 } from './SplitLayout.styles';
 import { PageContainer } from '../Theme/styles';
 
-const SplitLayoutLeft = ({ children }) => (
-  <Left>{children}</Left>
-)
+const SplitLayoutLeft = ({ children = null }) => {
+  if (children) {
+    return <Left>{children}</Left>
+  }
+
+  return null
+}
 
 const SplitLayoutRight = ({ children }) => {
   if (children) {
-    return <div className="split-layout__right">{children}</div>
+    return <Right>{children}</Right>
   }
 
   return null
@@ -25,6 +30,7 @@ const SpotImage = ({ src }) => <img src={src} alt="" />
 const SplitLayout = ({
   children,
   alignItems = 'flex-start',
+  justify = 'space-between',
   leftSpot = '',
   rightSpot = '',
   height = 'auto',
@@ -37,7 +43,7 @@ const SplitLayout = ({
           : null
       }
       <PageContainer>
-        <SplitLayoutContainer alignItems={alignItems}>
+        <SplitLayoutContainer alignItems={alignItems} justify={justify}>
           {children}
         </SplitLayoutContainer>
       </PageContainer>

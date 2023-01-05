@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Hero from '../features/landing/Hero'
 import Brands from '../features/landing/Brands'
 import SectionOne from '../features/landing/SectionOne'
+import SectionTwo from '../features/landing/SectionTwo'
 import SectionThree from '../features/landing/SectionThree'
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
         <Hero />
         <Brands />
         <SectionOne />
+        <SectionTwo />
         <SectionThree />
         <SectionOne />
       </main>

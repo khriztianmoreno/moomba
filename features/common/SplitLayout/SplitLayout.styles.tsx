@@ -18,7 +18,7 @@ export const SplitLayoutContainer = styled.div(
 
     @media (min-width: 768px) {
       display: flex;
-      justify-content: space-between;
+      justify-content: ${props.justify || 'space-between'};
       align-items: ${props.alignItems || 'baseline'};
       gap: 17rem;
     }
@@ -26,6 +26,11 @@ export const SplitLayoutContainer = styled.div(
 );
 
 export const Left = styled.div`
+  position: relative;
+  max-width: 50rem;
+`;
+
+export const Right = styled.div`
   position: relative;
   max-width: 50rem;
 `;
