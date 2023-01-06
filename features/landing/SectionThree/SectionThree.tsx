@@ -4,7 +4,7 @@ import rSpotImage from '../../../assets/img/right_Spot.png'
 
 const SectionThree = () => {
   return(
-    <SplitLayout alignItems="center" rightSpot={rSpotImage.src} height="836px" >
+    <SplitLayout alignItems="center" rightSpot={rSpotImage.src} height="836px">
       <SplitLayout.Left>
         <GeneralInfo
           title="Duis autem veleum iriure dolor in sed diam"

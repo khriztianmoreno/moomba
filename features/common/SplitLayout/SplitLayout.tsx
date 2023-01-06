@@ -17,7 +17,7 @@ const SplitLayoutLeft = ({ children = null }) => {
   return null
 }
 
-const SplitLayoutRight = ({ children }) => {
+const SplitLayoutRight = ({ children = null }) => {
   if (children) {
     return <Right>{children}</Right>
   }
@@ -29,14 +29,22 @@ const SpotImage = ({ src }) => <img src={src} alt="" />
 
 const SplitLayout = ({
   children,
+  bgColor = 'transparent',
   alignItems = 'flex-start',
   justify = 'space-between',
   leftSpot = '',
   rightSpot = '',
   height = 'auto',
+  element = 'section',
 }) => {
+  const Element = Container.withComponent(element);
+
   return (
-    <Container className="layout" bgRightSpot={rightSpot} height={height}>
+    <Element
+      className="layout"
+      height={height}
+      bgColor={bgColor}
+    >
       {
         leftSpot
           ? <LeftSpot ><SpotImage src={leftSpot}/></LeftSpot>
@@ -52,7 +60,7 @@ const SplitLayout = ({
           ? <RightSpot ><SpotImage src={rightSpot}/></RightSpot>
           : null
       }
-    </Container>
+    </Element>
   );
 };
 

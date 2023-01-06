@@ -7,6 +7,8 @@ import SectionTwo from '../features/landing/SectionTwo'
 import SectionThree from '../features/landing/SectionThree'
 import SectionFour from '../features/landing/SectionFour'
 import AboutSection from '../features/landing/AboutSection'
+import Footer from '../features/common/Footer'
+import CopyRight from '../features/common/CopyRight'
 
 function Home() {
   const seo = {
@@ -53,6 +55,8 @@ function Home() {
         <SectionOne />
         <SectionFour />
         <AboutSection />
+        <Footer />
+        <CopyRight />
       </main>
     </>
   )

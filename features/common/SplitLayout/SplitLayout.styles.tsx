@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Container = styled.section(
   props => `
     position: relative;
-    margin-bottom: 3rem;
+    background-color: ${props.bgColor};
 
     @media (min-width: 768px) {
       min-height: ${props.height};
