@@ -49,7 +49,7 @@ const globalStyle = (theme) => css`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 1.5rem 1rem;
   }
 
 `

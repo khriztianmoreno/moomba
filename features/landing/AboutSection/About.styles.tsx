@@ -37,7 +37,7 @@ export const Content = styled.div`
 export const Title = styled.h2(
   props => `
     color: ${props.theme.colors.white};
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 4.8rem;
     font-weight: bold;
     line-height: 5rem;
@@ -50,7 +50,7 @@ export const Title = styled.h2(
 export const Description = styled.p(
   props => `
     color: ${props.theme.colors.white};
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     line-height: 3.6rem;
     margin-bottom: 7rem;
@@ -63,7 +63,7 @@ export const Button = styled.button(
     background-color: ${props.theme.colors.springGreen};
     border-radius: 0.9rem;
     color: ${props.theme.colors.persianIndigo};
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 3.6rem;

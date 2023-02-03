@@ -3,14 +3,15 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 
 import {
-  NavMenu,
-  NavMenuList,
-  NavMenuLogo,
-  NavMenuListItem,
   ButtonSignUp,
   HambugerMenu,
   HideButtonMobile,
   LogoContainer,
+  NavMenu,
+  NavMenuList,
+  NavMenuListItem,
+  NavMenuLogo,
+  ParentContainer,
 } from './Menu.styles'
 import { PageContainer } from '../Theme/styles'
 
@@ -18,7 +19,7 @@ const Menu = () => {
   const router = useRouter();
 
   return (
-    <div className="layout">
+    <ParentContainer>
       <PageContainer>
         <NavMenu>
           <NavMenuLogo>
@@ -63,7 +64,7 @@ const Menu = () => {
 
         </NavMenu>
       </PageContainer>
-    </div>
+    </ParentContainer>
   )
 }
 

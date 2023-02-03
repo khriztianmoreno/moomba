@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 
+export const ParentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const NavMenu = styled.nav`
   display: flex;
   justify-content: space-between;

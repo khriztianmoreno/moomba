@@ -7,8 +7,8 @@ type PageContainerProps = {
 export const PageContainer = styled.div<PageContainerProps>(
   props => `
     background-color: ${props.bgColor || 'transparent'};
-    padding-left: 2rem;
-    padding-right: 2rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
     position: relative;
     width: 100%;
 
