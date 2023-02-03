@@ -88,7 +88,7 @@ export const Content = styled.div`
 export const Info = styled.div(
   props => `
     color: ${props.theme.colors.white};
-    font-family: Poppins;
+
     padding-top: 8rem;
     margin-bottom: 5rem;
 

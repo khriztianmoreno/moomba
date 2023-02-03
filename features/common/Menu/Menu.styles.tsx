@@ -50,7 +50,7 @@ export const ButtonSignUp = styled.button(props => (`
   border-radius: 0.9rem;
   color: ${props.theme.colors.white};
   font-size: 1.6rem;
-  font-family: Poppins;
+
   line-height: 3.4rem;
   padding: 0.4rem 4.3rem;
 

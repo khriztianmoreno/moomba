@@ -16,7 +16,7 @@ export const Logo = styled.div`
   }
 `;
 
-export const Paragraph = styled.p(
+export const Paragraph = styled.div(
   props => `
     color: ${props.theme.colors.doveGray};
     font-size: 2rem;

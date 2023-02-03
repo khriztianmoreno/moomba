@@ -5,7 +5,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Title = styled.h6`
-  font-family: Poppins;
+
   font-size: 2rem;
   letter-spacing: -0.45px;
   line-height: 2.6rem;
@@ -15,7 +15,7 @@ export const Title = styled.h6`
 export const Description = styled.p(
   props => `
     color: ${props.theme.colors.aluminium};
-    font-family: Poppins;
+
     font-size: 1.8rem;
     letter-spacing: -0.45px;
     line-height: 3.6rem;

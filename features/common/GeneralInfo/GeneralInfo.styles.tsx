@@ -9,7 +9,7 @@ export const Title = styled.h3`
 export const Description = styled.p(
   props => `
     color: ${props.theme.colors.aluminium};
-    font-family: Poppins;
+
     font-size: 1.8rem;
     letter-spacing: -0.45px;
     line-height: 3.6rem;
@@ -31,7 +31,7 @@ export const CallToAction = styled.button(
   props => `
     background-color: transparent;
     color: ${props.theme.colors.electricViolet};
-    font-family: Poppins;
+
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: -0.4px;

@@ -1,17 +1,16 @@
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from '@emotion/react'
+import { ThemeProvider, Global } from '@emotion/react'
 import { Poppins } from '@next/font/google'
 
-import 'normalize.css/normalize.css';
-
 import theme from '../features/common/Theme/theme'
-import '../styles/globals.css'
+import globalStyle from '../features/common/Theme/GlobalStyles';
 
 const poppins = Poppins({ weight: ['400', '500', '600', '700'], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
+      <Global styles={globalStyle} />
       <div className={poppins.className}>
         <Component {...pageProps} />
       </div>
